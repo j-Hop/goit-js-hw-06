@@ -16,7 +16,6 @@ const destroyBtn = document.querySelector('[data-destroy]');
     const box = document.createElement("div");
     box.style.weight = `${size}px`;
     box.style.height = `${size}px`;
-    box.style.padding = `10px`;
     box.style.backgroundColor = getRandomHexColor();
     size += 10; 
     items.push(box);

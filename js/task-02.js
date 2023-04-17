@@ -9,13 +9,15 @@ const ingredients = [
 
   const ulEl = document.getElementById("ingredients");
 
+const items = [];
+
   for (const ingradient of ingredients) {
   const liEl = document.createElement("li") ;
   liEl.textContent = ingradient;
-  ulEl.appendChild(liEl);
+items.push(liEl);
   };
   
-  
+    ulEl.append(...items);
 
 
 //   HTML містить порожній список ul#ingredients.
